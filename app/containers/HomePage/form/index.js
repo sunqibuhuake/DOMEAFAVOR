@@ -63,7 +63,10 @@ export default class XForm extends React.PureComponent {
                         <XOption
                             name="年级"
                             id="level-input"
-                            options={defaultData.level}
+                            options={defaultData.level.map(level => {
+                                level.name = level.type + level.name;
+                                return level;
+                            })}
                         >
                         </XOption>
 

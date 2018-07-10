@@ -24,9 +24,9 @@ const initialState = fromJS(initData);
 function appReducer(state = initialState, action) {
     switch (action.type) {
         case ADD_ITEM:
-            return state.set('add', action.item)
+            return state.set('add', action.items)
         case ADD_ITEM_SUCCESS:
-            return state.set('items', action.items)
+            return state.set('items', fromJS(action.items)).set('add', false)
         default:
             return state;
     }

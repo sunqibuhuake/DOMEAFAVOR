@@ -19,7 +19,7 @@ import {
 
 
 import {
-    addItem
+    addItems
 } from '../App/actions'
 
 import './style.css'
@@ -50,11 +50,11 @@ export class HomePage extends React.PureComponent {
 
         return (
             <div className="page-container">
-                <Form>
+                <Form
+                    {...this.props}
+                ></Form>
 
-                </Form>
-
-                <CoolTable></CoolTable>
+                <CoolTable {...this.props}></CoolTable>
 
             </div>
         )
@@ -64,11 +64,13 @@ export class HomePage extends React.PureComponent {
 
 export function mapDispatchToProps(dispatch) {
     return {
-        addItem: (item) => dispatch(addItem(item))
+        addItems: (items) => dispatch(addItems(items))
     };
 }
 
 const mapStateToProps = createStructuredSelector({
+    items: makeSelectItems(),
+    location: makeSelectLocation()
 });
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);

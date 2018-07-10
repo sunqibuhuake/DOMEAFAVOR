@@ -3,10 +3,10 @@ import {
 ADD_ITEM_SUCCESS
 } from './constants'
 
-export function addItem (item) {
+export function addItems (items) {
     return {
         type: ADD_ITEM,
-        item
+        items
     }
 }
 

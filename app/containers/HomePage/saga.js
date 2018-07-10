@@ -14,8 +14,8 @@ import helper from '../../utils/helper'
 
 
 export function* addItem() {
-  const add = yield select(makeSelectAdd())
-  helper.saveItems(item);
+  const add_items = yield select(makeSelectAdd())
+  helper.saveItems(add_items);
   const items = helper.getItems();
   yield put(addItemSuccess(items))
 

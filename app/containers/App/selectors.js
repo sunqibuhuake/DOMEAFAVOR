@@ -15,7 +15,7 @@ const makeSelectLocation = () => createSelector(
 );
 const makeSelectItems = () => createSelector(
     selectGlobal,
-    (state) => state.get('items')
+    (state) => state.get('items').toJS()
 );
 const makeSelectAdd = () => createSelector(
     selectGlobal,

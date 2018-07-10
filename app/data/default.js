@@ -6,62 +6,62 @@ export default {
         {
             name: '一年级',
             type: '小学',
-            id: 1
+            id: 'level1'
         },
         {
             name: '二年级',
             type: '小学',
-            id: 2
+            id: 'level2'
         },
         {
             name: '三年级',
             type: '小学',
-            id: 3
+            id: 'level3'
         },
         {
             name: '四年级',
             type: '小学',
-            id: 4
+            id: 'level4'
         },
         {
             name: '五年级',
             type: '小学',
-            id: 5
+            id: 'level5'
         },
         {
             name: '六年级',
             type: '小学',
-            id: 6
+            id: 'level6'
         },
         {
             name: '一年级',
             type: '初中',
-            id: 7
+            id: 'level7'
         },
         {
             name: '二年级',
             type: '初中',
-            id: 8
+            id: 'level8'
         },
         {
             name: '三年级',
             type: '初中',
-            id: 9
+            id: 'level9'
         },
         {
             name: '一年级',
             type: '高中',
-            id: 10
+            id: 'level10'
         },
         {
             name: '二年级',
             type: '高中',
-            id: 11
+            id: 'level11'
         },
         {
             name: '三年级',
             type: '高中',
-            id: 12
+            id: 'level12'
         },
 
 

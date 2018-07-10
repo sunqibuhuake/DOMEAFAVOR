@@ -4,21 +4,32 @@ const renderContent = (value, row, index) => {
       children: value,
       props: {},
     };
-    if (index === 4) {
-      obj.props.colSpan = 0;
-    }
     return obj;
   };
+
+  const renderCity = (city, row, index) => {
+    console.log(city)
+    return city;
+  };
 const table_config =  {
-    columns: []
+    columns: [
+        {
+            title: '城市',
+            //colSpan: 2,
+            dataIndex: 'city',
+            key:'table-city',
+            render: renderContent
+        }
+    ]
 }
 
 default_data.level.forEach((level) => {
     const key = level.type + level.name
     table_config.columns.push({
         title: key,
-        colSpan: 2,
-        dataIndex: key,
+        //colSpan: 2,
+        key: 'table-' + level.id,
+        dataIndex: level.id,
         render: renderContent
     })
 })

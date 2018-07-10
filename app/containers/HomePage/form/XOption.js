@@ -35,7 +35,7 @@ export default class XOption extends React.PureComponent{
     }
     render() {
         return (
-            <span>
+            <div className="input-container">
                   <Select
                       mode="multiple"
                       style={{ width: '100%' }}
@@ -45,7 +45,7 @@ export default class XOption extends React.PureComponent{
                       {this.state.options}
                   </Select>
                 <input value={this.state.value} style={{display: 'none'}} id={this.props.id} />
-            </span>
+            </div>
 
         )
     }

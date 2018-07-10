@@ -19,10 +19,10 @@ export default class XDate extends React.PureComponent{
     }
     render() {
         return (
-            <span>
+            <div className="input-container">
                 <RangePicker onChange={this.onChange.bind(this)} />
-                <input id="date-input" value={this.state.value}></input>
-            </span>
+                <input style={{display:'none'}} id="date-input" value={this.state.value}></input>
+            </div>
         )
 
     }

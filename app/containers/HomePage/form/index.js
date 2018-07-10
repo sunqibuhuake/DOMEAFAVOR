@@ -8,6 +8,7 @@ import XOption from './XOption'
 import { DatePicker, Row, Col } from 'antd';
 const {  RangePicker } = DatePicker;
 import XDate from './XDate'
+import XInput from './XInput'
 
 function onChange(date, dateString) {
     console.log(date, dateString);
@@ -37,13 +38,15 @@ export default class XForm extends React.PureComponent {
 
                     </Col>
                     <Col span={12}>
+                    <XInput></XInput>
+
                         <XDate></XDate>
+                      
+                    </Col>
 
-                        <div>
-                            <input></input>
-                        </div>
-                        <div className="add-btn">
-
+                    <Col span={24}>
+                    <div className="add-btn">
+                            添加
                         </div>
                     </Col>
 

@@ -6,13 +6,33 @@
 }
 
 .add-btn {
-    width: 100%;
+    width: 20%;
     height: 48px;
     font-size: 16px;
     color: white;
     text-align: center;
     line-height: 48px;
     border-radius: 6px;
+    margin:0 auto;
     background: #166bff;
+    cursor: pointer;
 
+}
+.hyl-input {
+    height: 32px;
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    width: 100%;
+    line-height: 30px;
+    color: #777777;
+    padding: 0 12px;
+}
+.ant-calendar-picker {
+    width: 100%;
+}
+
+.input-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px;
 }

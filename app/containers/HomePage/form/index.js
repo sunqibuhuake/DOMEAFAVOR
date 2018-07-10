@@ -17,7 +17,7 @@ export default class XForm extends React.PureComponent {
 
     render() {
         return (
-            <section style={{width: '100%', padding: 24,background: 'white'}}>
+            <section className="card">
                 <Row>
                     <Col span={12}>
                         <XOption

@@ -3,6 +3,7 @@
     width: 100%;
     padding: 24px 12px;
     margin: 0;
+    background: #e6e6e6;
 }
 
 .add-btn {
@@ -35,4 +36,10 @@
     width: 90%;
     margin: 0 auto;
     padding: 12px;
+}
+.card {
+    width: 100%;
+    padding: 24px;
+    background: white;
+    margin-bottom: 24px;
 }

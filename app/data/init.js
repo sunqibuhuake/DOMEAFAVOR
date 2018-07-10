@@ -2,11 +2,9 @@
  * Created by sunqi on 2018/5/29.
  */
 import helper from '../utils/helper'
-//import {image} from './image'
-export default {
-  items: helper.getItems(),
-  add: {
-    name: '',
 
-  }
+export default {
+  // get all items when load
+  items: helper.getItems(),
+  add: false
 }

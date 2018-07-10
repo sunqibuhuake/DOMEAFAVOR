@@ -10,6 +10,7 @@ import injectSaga from 'utils/injectSaga';
 import saga from './saga'
 
 import Form from './form'
+import CoolTable from './table'
 
 import {
     makeSelectItems,
@@ -53,6 +54,8 @@ export class HomePage extends React.PureComponent {
 
                 </Form>
 
+                <CoolTable></CoolTable>
+
             </div>
         )
     }
@@ -61,6 +64,7 @@ export class HomePage extends React.PureComponent {
 
 export function mapDispatchToProps(dispatch) {
     return {
+        addItem: (item) => dispatch(addItem(item))
     };
 }
 
